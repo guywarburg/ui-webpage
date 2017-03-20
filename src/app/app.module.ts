@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageTextComponent } from './message-text/message-text.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MessagesComponent,
     MessageTextComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
