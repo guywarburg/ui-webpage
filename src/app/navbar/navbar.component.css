@@ -7,7 +7,7 @@
 nav {
     background-color: #fff;
     border-bottom: 1px solid #d4d9e3;
-    height: 120px;
+    min-height: 120px;
     font-size: 1.3em;
 }
 
@@ -31,7 +31,6 @@ nav a:hover {
 
 /* Hamburger menu */
 .menu {
-    margin-left: 20px;
     min-width: 45px;
 }
 
@@ -137,6 +136,7 @@ nav ul.navbar-right {
 @media screen and (min-width: 768px){
     nav {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -151,5 +151,12 @@ nav ul.navbar-right {
 
     nav ul.navbar-right li {
         max-width: 70px;
+    }
+    nav ul.navbar-right li.add-project-container {
+        margin-right: 40px;
+    }
+
+    .menu {
+        margin-left: 20px;
     }
 }
