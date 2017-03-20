@@ -10,10 +10,10 @@ import { Component, OnInit, Input, trigger, state, style, transition, animate } 
         transform: 'translateX(0)'
       })),
       state('out', style({
-        transform: 'translateX(-1000px)'
+        transform: 'translateX(-100%)'
       })),
-      transition('in => out', animate('500ms ease-in-out')),
-      transition('out => in', animate('500ms ease-in-out'))
+      transition('in => out', animate('500ms linear')),
+      transition('out => in', animate('500ms linear'))
     ]),
   ]
 })

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  menuState:string = 'out';
-  toggleSidebar(): void {
-    this.menuState = this.menuState === 'out' ? 'in' : 'out';
+  isMenuOpen:string = 'out';
+
+  @Output()
+  toggleSidebar = new EventEmitter<string>();
+  
+  sidebarPos(): void {
+    this.isMenuOpen = this.isMenuOpen === 'out' ? 'in' : 'out';
+    this.toggleSidebar.emit(this.isMenuOpen);
   }
   constructor() { }
 
