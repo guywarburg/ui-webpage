@@ -1,0 +1,12 @@
+<div class="message">
+  <div class="message--header">
+    <h3 class="message--header-title">Messages</h3>
+    <span class="message--header-unread">2</span>
+  </div>
+  <ul class="message--list">
+    <li *ngFor="let message of messages" class="message--list-item" [class.message-read]="!message.read">
+      <img src="{{ message.avatar }}" alt="avatar" class="message--list-avatar">
+      <app-message-text [message]="message"></app-message-text>
+    </li>
+  </ul>
+</div>

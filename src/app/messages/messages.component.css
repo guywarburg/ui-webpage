@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.message{
+    background-color: #fff;
+    border: 1px solid #d4d9e3;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message--header-title{
+    font-size: 20px;
+    margin-left: 34px;
+    margin-top: 36px;
+    display: inline-block;
+    color: #0e1a35;
+}
+
+.message--header-unread {
+    float: right;
+    background-color: #5384ff;
+    padding: 12px 20px;
+    border-radius: 50%;
+    color: white;
+    margin: 21px 31px;
+    margin-right: 31px;
+    font-size: 20px;
+}
+
+.message--header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.message--list{
+    margin: 0;
+    padding: 0;
+
+}
+
+.message--list-item {
+    list-style-type: none;
+    border-top: 1px solid #d4d9e3;
+    padding: 28px 33px;
+    display: flex;
+}
+
+.message--list-avatar {
+    height: 100%;
+}
+
+.message-read {
+    background-color: #f4f5f8;
+}
