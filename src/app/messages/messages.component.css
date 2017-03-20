@@ -45,31 +45,8 @@
     display: flex;
 }
 
-.message--list-text{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 27px 0;
-}
-
 .message--list-avatar {
     height: 100%;
-}
-
-.message--list-name {
-    margin: 0;
-}
-
-.message--list-time {
-    color: #8492af;
-    margin-left: 8px;
-}
-
-.message--list-content{
-    margin: 0;
-}
-
-.message--list-reply, .message--list-settings {
-    margin: 10px 10px 0 0;
 }
 
 .message-read {

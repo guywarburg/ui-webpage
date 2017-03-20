@@ -1,19 +1,12 @@
 <div class="message">
   <div class="message--header">
-    <h3 class="message--header-title">Name</h3>
+    <h3 class="message--header-title">Messages</h3>
     <span class="message--header-unread">2</span>
   </div>
   <ul class="message--list">
-    <li class="message--list-item message-read">
-      <img src="../../assets/images/nina-jones-avatar.png" alt="avatar" class="message--list-avatar">
-      <div class="message--list-text">
-        <h4 class="message--list-name">Nina Jones<span class="message--list-time">5 minutes ago</span></h4>
-        <p class="message--list-content">Hey! I attached some new PSD files for (...)</p>
-        <img src="../../assets/images/reply-btn.png" alt="reply" class="message--list-reply">
-        <img src="../../assets/images/setting-btn.png" alt="settings" class="message--list-settings">
-      </div>
+    <li *ngFor="let message of messages" class="message--list-item" [class.message-read]="!message.read">
+      <img src="{{ message.avatar }}" alt="avatar" class="message--list-avatar">
+      <app-message-text [message]="message"></app-message-text>
     </li>
-    <li class="message--list-item">Message 1</li>
-    <li class="message--list-item">Message 1</li>
   </ul>
 </div>

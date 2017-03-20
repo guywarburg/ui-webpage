@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { MessageTextComponent } from './message-text/message-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    MessageTextComponent
   ],
   imports: [
     BrowserModule,
