@@ -1,8 +1,10 @@
 <div class="card">
   <div class="card--header">
     <h3 class="card--header-title">{{ title }}</h3>
-    <span *ngIf="badge1" class="card--header-badge1">{{ badge1 }}</span>
-    <span *ngIf="badge2" class="card--header-badge2">{{ badge2 }}</span>
+    <div class="card--header-badges">
+      <span *ngIf="badge1" class="card--header-badge1">{{ badge1 }}</span>
+      <span *ngIf="badge2" class="card--header-badge2">{{ badge2 }}</span>
+    </div>
   </div>
   <ng-content></ng-content>
 </div>

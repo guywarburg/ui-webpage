@@ -5,22 +5,34 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .card--header-title{
+    flex: 1 1 0;
+    margin-right: 20px;
     font-size: 20px;
     margin-left: 34px;
-    margin-top: 36px;
-    display: inline-block;
     color: #0e1a35;
 }
 
+.card--header-badges{
+    margin: 21px 31px;
+    font-size: 20px;
+    width: auto;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
 .card--header-badge1, .card--header-badge2 {
-    float: right;
     padding: 12px 20px;
     border-radius: 50%;
     color: white;
-    margin: 21px 31px;
-    margin-right: 31px;
-    font-size: 20px;
+    margin-left: 10px;
 }
 
 .card--header-badge1 {
@@ -29,10 +41,4 @@
 
 .card--header-badge2 {
     background-color: #f83c7b;
-}
-
-.card--header:after{
-    content: "";
-    display: block;
-    clear: both;
 }
