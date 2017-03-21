@@ -1,7 +1,6 @@
 .message--list{
     margin: 0;
     padding: 0;
-
 }
 
 .message--list-item {
@@ -9,6 +8,8 @@
     border-top: 1px solid #d4d9e3;
     padding: 28px 33px;
     display: flex;
+    align-items: center;
+    min-height: 73px;
 }
 
 .message--list-avatar {

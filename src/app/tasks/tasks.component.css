@@ -1,7 +1,6 @@
 .tasks--list{
     margin: 0;
     padding: 0;
-
 }
 
 .task--list-item {
@@ -10,6 +9,8 @@
     padding: 28px 33px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 73px;
 }
 
 .flex {

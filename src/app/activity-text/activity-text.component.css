@@ -1,0 +1,15 @@
+.activity--list-content {
+    color: #8492af;
+    font-size: 0.9em;
+}
+
+strong {
+    font-weight: bold;
+    color: #0e1a35;
+}
+
+.activity--list-time {
+    color: #8492af;
+    font-size: 1em;
+    margin-top: 5px;
+}
