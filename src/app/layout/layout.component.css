@@ -1,27 +1,68 @@
 .main {
     padding: 10px;
 }
-.flex {
-    display: flex;
-    flex-wrap: wrap;
+
+.float:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
+/* top components */
+
+.top-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-container li {
+    float: left;
+    
+}
+.sales {
+    width: 38%;
+}
+
+.report {
+    width: 58%;
+    margin-left: 4%;
+}
+
+/* bottom components */
 .component {
+    float: left;
     width: 30%;
     margin-top: 10px;
-    flex: 1 1 0;
 }
 
 .component:nth-child(2) {
     margin: 10px 5%;
 }
 
-app-sales {
-    margin: 10px 10px;
-    flex: 1 1 0;
+/** Media Queries **/
+
+/* laptop */
+@media screen and (max-width: 1000px){
+    .component {
+        width: 48%;
+        margin-top: 1%;
+    }
+
+    .component:nth-child(2) {
+        margin: 1% 0 0 2%;
+    }
 }
 
-app-report {
-    margin: 10px 10px;
-    flex: 1.5 1 0;
+/* tablet */
+@media screen and (max-width: 768px){
+    .top-container li{
+        width: 98%;
+        margin: 2%;
+    }
+
+    .component {
+        width: 98%;
+        margin: 2% !important;
+    }
 }
