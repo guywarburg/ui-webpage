@@ -4,16 +4,33 @@
 }
 
 /* General Styles */
+.menu {
+    margin-left: 20px;
+}
+
 nav {
     background-color: #fff;
     border-bottom: 1px solid #d4d9e3;
     min-height: 120px;
     font-size: 1.3em;
+    text-align: center;
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+
+    display: flex;
+}
+
+nav li {
+    flex: 1 1 0;
+    margin-right: 20px;
 }
 
 nav a {
@@ -70,7 +87,10 @@ nav a:hover {
 
 /* General */
 nav ul.navbar-right li {
+    text-align: center;
     display: block;
+    max-width: 70px;
+    min-width: 70px;
 }
 
 /* Add-Project button */
@@ -118,13 +138,17 @@ nav ul.navbar-right li {
 
 /* User image and icon */
 .user {
-    min-width: 75px;
+    max-height: 55px;
+}
+
+.user img {
+    width: 100%;
 }
 
 .user i {
-    margin-left: 7px;
+    right: -34px;
     position: relative;
-    top: -20px;
+    top: -45px;
 }
 
 /* Flex Styles */
@@ -133,79 +157,23 @@ nav ul.navbar-right {
     justify-content: flex-end;
     align-items: center;
 }
-@media screen and (min-width: 768px){
+@media screen and (max-width: 540px){
     nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
+
     nav ul {
-        display: flex;
+        margin: 0;
     }
 
-    nav li {
-        flex: 1 1 0;
-        margin-right: 20px;
+    nav ul.navbar-right {
+        justify-content: center;
     }
 
     nav ul.navbar-right li {
-        max-width: 70px;
+        max-width: 70px;        
     }
-    nav ul.navbar-right li.add-project-container {
-        margin-right: 40px;
-    }
-
-    .menu {
-        margin-left: 20px;
-    }
-}
-
-
-/* test */
-
-.hamburger {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 96px;
-  height: 96px;
-  font-size: 0;
-  text-indent: -9999px;
-  cursor: pointer;
-  outline: none;
-  background: none;
-  border: 0;
-}
- 
- 
-.hamburger span {
-  display: block;
-  position: absolute;
-  top: 44px;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: #1a2580;
-}
- 
-.hamburger span::before,
-.hamburger span::after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #1a2580;
-  content: "";
-}
- 
-.hamburger span::before {
-  top: -20px;
-}
- 
-.hamburger span::after {
-  bottom: -20px;
 }

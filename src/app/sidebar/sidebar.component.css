@@ -10,12 +10,13 @@
   background: #0e1a35;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -20%;
   bottom: 0;
   width: 20%;
   z-index: 1;
   height: 100%;
   margin: 0;
+  transition: 0.5s linear;
 }
  
 ul {
@@ -72,4 +73,58 @@ a {
 .settings a{
     background: url('../../assets/images/settings.png') no-repeat;
     background-position: 14%;
+}
+
+.close {
+    display: none;
+}
+
+/** animation **/
+
+.in {
+    transition: 0.5s linear;
+    left: 0;
+}
+
+/* laptops */
+@media screen and (max-width:1200px){
+    .sidenav {
+        left: -30%;
+        bottom: 0;
+        width: 30%;
+    }
+    .in {
+        transition: 0.5s linear;
+        left: 0;
+    }
+}
+
+/* smartphones */
+@media screen and (max-width:768px){
+    .sidenav {
+        width: 100%;
+        left: -100%;
+    }
+    .in {
+        transition: 0.5s linear;
+        left: 0;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .close:hover {
+        color: #eee;
+    }
+
+    a {
+        text-align: center;
+        padding: 0;
+    }
 }

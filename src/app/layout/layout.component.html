@@ -1,9 +1,9 @@
 <div class="main">
-    <div class="flex">
-        <app-sales ></app-sales>
-        <app-report ></app-report>
-    </div>
-    <div class="flex">
+    <ul class="float top-container">
+        <li class="sales"><app-sales></app-sales></li>
+        <li class="report"><app-report></app-report></li>
+    </ul>
+    <div class="float">
         <app-card [title]="tasksTitle" [badge1]="tasksBadge1" [badge2]="tasksBadge2" class="component">
             <app-tasks></app-tasks>
         </app-card>
