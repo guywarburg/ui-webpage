@@ -1,0 +1,4 @@
+<div class="task--list-text">
+  <h3 class="task--list-name">{{ task.title }}</h3>
+  <div class="task--list-content" [class.late-delivery]="task.dueDate < 0"><i class="fa fa-clock-o fa-flip-horizontal" aria-hidden="true"></i>&nbsp; {{ createDueDateString(task.dueDate) }}</div>
+</div>

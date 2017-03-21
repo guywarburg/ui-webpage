@@ -1,9 +1,17 @@
-<div class="flex">
-    <app-sales ></app-sales>
-    <app-report ></app-report>
-</div>
-<div class="flex">
-    <app-messages class="component"></app-messages>
-    <app-messages class="component"></app-messages>
-    <app-messages class="component"></app-messages>
+<div class="main">
+    <div class="flex">
+        <app-sales ></app-sales>
+        <app-report ></app-report>
+    </div>
+    <div class="flex">
+        <app-card [title]="tasksTitle" [badge1]="tasksBadge1" [badge2]="tasksBadge2" class="component">
+            <app-tasks></app-tasks>
+        </app-card>
+        <app-card [title]="messagesTitle" [badge1]="messagesBadge1" [badge2]="messagesBadge2" class="component">
+            <app-messages></app-messages>
+        </app-card>
+        <app-card [title]="activityTitle" [badge1]="activityBadge1" [badge2]="activityBadge2" class="component">
+            <app-activity></app-activity>
+        </app-card>
+    </div>
 </div>

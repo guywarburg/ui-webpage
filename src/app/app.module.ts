@@ -11,6 +11,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SalesComponent } from './sales/sales.component';
 import { ReportComponent } from './report/report.component';
+import { CardComponent } from './card/card.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TaskTextComponent } from './task-text/task-text.component';
+import { ActivityComponent } from './activity/activity.component';
+import { ActivityTextComponent } from './activity-text/activity-text.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { ReportComponent } from './report/report.component';
     SidebarComponent,
     LayoutComponent,
     SalesComponent,
-    ReportComponent
+    ReportComponent,
+    CardComponent,
+    TasksComponent,
+    TaskTextComponent,
+    ActivityComponent,
+    ActivityTextComponent
   ],
   imports: [
     BrowserModule,

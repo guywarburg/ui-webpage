@@ -1,0 +1,9 @@
+<ul class="tasks--list">
+  <li *ngFor="let task of tasks" class="task--list-item">
+    <div class="flex">
+      <img src="{{ task.avatar }}" alt="avatar" class="task--list-avatar">
+      <app-task-text [task]="task"></app-task-text>
+    </div>
+    <div class="task--list-options"></div>
+  </li>
+</ul>
