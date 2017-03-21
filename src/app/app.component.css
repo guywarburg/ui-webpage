@@ -1,5 +1,5 @@
 h1 {
-    margin: 10px;
+    margin: 1%;
 }
 
 .wrapper {
@@ -19,5 +19,9 @@ h1 {
     .in {
         width: 100%;
         transform: none;
+    }
+
+    h1 {
+        margin: 20px;
     }
 }
