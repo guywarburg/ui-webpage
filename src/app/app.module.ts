@@ -12,6 +12,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { SalesComponent } from './sales/sales.component';
 import { ReportComponent } from './report/report.component';
 import { CardComponent } from './card/card.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TaskTextComponent } from './task-text/task-text.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CardComponent } from './card/card.component';
     LayoutComponent,
     SalesComponent,
     ReportComponent,
-    CardComponent
+    CardComponent,
+    TasksComponent,
+    TaskTextComponent
   ],
   imports: [
     BrowserModule,
