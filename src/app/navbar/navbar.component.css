@@ -1,0 +1,211 @@
+/* Atomic classes */
+.f-s-caret {
+    font-size: 0.8em;
+}
+
+/* General Styles */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #d4d9e3;
+    min-height: 120px;
+    font-size: 1.3em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #0e1a35;
+}
+
+nav a:hover {
+    color: #8492af;
+}
+
+/* Hamburger menu */
+.menu {
+    min-width: 45px;
+}
+
+.menu .caret {
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.caret-blue {
+    color: #5384ff;
+}
+
+/* Search menu */
+.search-label {
+    font-family: FontAwesome;
+    color: #0e1a35;
+    font-size: 1em;
+}
+#search {
+    width: 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    margin-top: -2px;
+    margin-left: 5px;
+}
+
+#search:focus {
+    width: 60%;
+    border-bottom: 1px solid #8492af;
+    border-radius: 5px;
+}
+/*** Right Aligned Menu ***/
+
+/* General */
+nav ul.navbar-right li {
+    display: block;
+}
+
+/* Add-Project button */
+.add-project {
+    background-color: #5384ff;
+    border: #5384ff 1px solid;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #fff !important;
+    font-weight: bold;
+    width: 80px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.add-project:hover {
+    background-color: #fff;
+    color: #5384ff !important;
+}
+
+.add-project span {
+    color: #aac2ff;
+}
+
+/* Notification icon and badge */
+
+.badge {
+   position:relative;
+}
+.badge[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-10px;
+   font-size:.5em;
+   background:#5384ff;
+   color:white;
+   width:16px;
+   height:16px;
+   text-align:center;
+   line-height:16px;
+   border-radius:50%;
+   border: 1px solid #fff;
+}
+
+/* User image and icon */
+.user {
+    min-width: 75px;
+}
+
+.user i {
+    margin-left: 7px;
+    position: relative;
+    top: -20px;
+}
+
+/* Flex Styles */
+nav ul.navbar-right {
+    flex: 1 1 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (min-width: 768px){
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1 1 0;
+        margin-right: 20px;
+    }
+
+    nav ul.navbar-right li {
+        max-width: 70px;
+    }
+    nav ul.navbar-right li.add-project-container {
+        margin-right: 40px;
+    }
+
+    .menu {
+        margin-left: 20px;
+    }
+}
+
+
+/* test */
+
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 0;
+}
+ 
+ 
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: #1a2580;
+}
+ 
+.hamburger span::before,
+.hamburger span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #1a2580;
+  content: "";
+}
+ 
+.hamburger span::before {
+  top: -20px;
+}
+ 
+.hamburger span::after {
+  bottom: -20px;
+}

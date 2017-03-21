@@ -1,0 +1,8 @@
+.report {
+    max-width: 886px;
+    height: 469px;
+    min-width: 530px;
+    background-image: url('../../assets/images/report.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+}

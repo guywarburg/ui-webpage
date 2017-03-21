@@ -1,0 +1,75 @@
+.logo {
+    text-indent: -10000px;
+    background: url('../../assets/images/logo.png') no-repeat;
+    margin: 0;
+    background-position: 22%;
+    border-bottom: 1px solid #0d172e;
+}
+
+.sidenav {
+  background: #0e1a35;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  z-index: 1;
+  height: 100%;
+  margin: 0;
+}
+ 
+ul {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 400;
+  padding-top: 50px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li.active, li:hover {
+    background: #122143;
+    border-left: 10px solid #5584ff;
+}
+
+li {
+    border-left: 10px solid #0e1a35;
+    border-bottom: 1px solid #0d172e;
+}
+
+a {
+    padding-left: 80px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home a{
+    background: url('../../assets/images/home.png') no-repeat;
+    background-position: 14%;
+}
+
+.workflow a{
+    background: url('../../assets/images/workflow.png') no-repeat;
+    background-position: 14%;
+}
+
+.stats a{
+    background: url('../../assets/images/stats.png') no-repeat;
+    background-position: 14%;
+}
+
+.calendar a{
+    background: url('../../assets/images/calendar.png') no-repeat;
+    background-position: 14%;
+}
+
+.users a{
+    background: url('../../assets/images/users.png') no-repeat;
+    background-position: 14%;
+}
+
+.settings a{
+    background: url('../../assets/images/settings.png') no-repeat;
+    background-position: 14%;
+}
