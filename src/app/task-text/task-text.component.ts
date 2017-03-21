@@ -16,6 +16,8 @@ export class TaskTextComponent implements OnInit {
     }
     return Math.abs(timeLeft).toString() + ' days delays';
   }
+
+  // TODO - slice text if to long
   constructor() { }
 
   ngOnInit() {

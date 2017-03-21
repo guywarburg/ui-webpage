@@ -45,6 +45,8 @@ a {
     color: #fff;
 }
 
+/* icons */
+
 .home a{
     background: url('../../assets/images/home.png') no-repeat;
     background-position: 14%;
@@ -79,7 +81,7 @@ a {
     display: none;
 }
 
-/** animation **/
+/** transition and media queries **/
 
 .in {
     transition: 0.5s linear;

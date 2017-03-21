@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  // receives a title and two optional badges for display
+  // if badge value is '0' is won't display
   @Input()
   title: string;
   @Input()

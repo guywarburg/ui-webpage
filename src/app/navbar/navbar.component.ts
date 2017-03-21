@@ -6,14 +6,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  isMenuOpen:string = 'out';
+
+  @Input()
+  menuState:string;
 
   @Output()
   toggleSidebar = new EventEmitter<string>();
   
   sidebarPos(): void {
-    this.isMenuOpen = this.isMenuOpen === 'out' ? 'in' : 'out';
-    this.toggleSidebar.emit(this.isMenuOpen);
+    this.toggleSidebar.emit(this.menuState);
   }
   constructor() { }
 

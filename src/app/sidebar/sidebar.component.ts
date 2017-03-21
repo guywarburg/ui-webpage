@@ -14,7 +14,6 @@ export class SidebarComponent implements OnInit {
   toggleSidebar = new EventEmitter<string>();
 
   closeSidebar(): void{
-    this.menuState = this.menuState === 'out' ? 'in' : 'out';
     this.toggleSidebar.emit(this.menuState);
   }
   constructor() { }

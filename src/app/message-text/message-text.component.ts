@@ -7,8 +7,11 @@ import { Messages } from '../message';
   styleUrls: ['./message-text.component.css']
 })
 export class MessageTextComponent implements OnInit {
+
   @Input()
   message: Messages;
+  
+  // TODO - slice text if to long
   constructor() { }
 
   ngOnInit() {
