@@ -11,10 +11,15 @@ export class LayoutComponent implements OnInit {
   tasksBadge1: number = 5;
   tasksBadge2: number = 2;
   
-  // messages component variables
+  // Messages component variables
   messagesTitle: string = 'Messages';
   messagesBadge1: number = 2;
   messagesBadge2: number = 0;
+  
+  // Activity component variables
+  activityTitle: string = 'Activity';
+  activityBadge1: number = 10;
+  activityBadge2: number = 0;
   constructor() { }
 
   ngOnInit() {
