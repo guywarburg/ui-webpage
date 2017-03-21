@@ -1,4 +1,4 @@
-<ul class="sidenav" [@slideInOut]="menuState">
+<ul class="sidenav" [class.in]="menuState === 'in'">
   <h2 class="logo">Merkury</h2>
   <li class="home active"><a href="">Home</a></li>
   <li class="workflow"><a href="">Workflow</a></li>
@@ -6,4 +6,5 @@
   <li class="calendar"><a href="">Calendar</a></li>
   <li class="users"><a href="">Users</a></li>
   <li class="settings"><a href="">Settings</a></li>
+  <i class="fa fa-times close" aria-hidden="true" (click)="closeSidebar()"></i>
 </ul>

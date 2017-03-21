@@ -58,11 +58,11 @@
 @media screen and (max-width: 768px){
     .top-container li{
         width: 98%;
-        margin: 2%;
+        margin-left: 2%;
     }
 
     .component {
         width: 98%;
-        margin: 2% !important;
+        margin: 1% !important;
     }
 }

@@ -1,5 +1,5 @@
-<app-sidebar [menuState]="menuState"></app-sidebar>
-<div class="wrapper" [@slideInOut]="menuState">
+<app-sidebar [menuState]="menuState" (toggleSidebar)="toggleSidebar($event)"></app-sidebar>
+<div class="wrapper" [class.in]="menuState === 'in'">
   <app-navbar (toggleSidebar)="toggleSidebar($event)"></app-navbar>
   <h1> Hello {{ name }}!</h1>
   <app-layout></app-layout>
