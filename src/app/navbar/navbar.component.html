@@ -1,8 +1,9 @@
 <nav>
   <!-- Align left -->
   <ul>
-    <li (click)="sidebarPos()"><a href="#" class="menu"><i class="fa fa-caret-right f-s-caret caret" aria-hidden="true" [class.fa-flip-horizontal]="isMenuOpen === 'in'" [class.caret-blue]="isMenuOpen === 'in'"></i><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+    <li (click)="sidebarPos()"><a href="#" class="menu"><i class="fa fa-caret-right f-s-caret caret" aria-hidden="true" [class.fa-flip-horizontal]="menuState === 'in'" [class.caret-blue]="menuState === 'in'"></i><i class="fa fa-bars" aria-hidden="true"></i></a></li>
     <li>
+        <!-- TODO - trial search element -->
         <!--<label class="search-label" for="search">&#xf002;</label>
         <input id="search" name="search" type="text" placeholder="Search">-->
         <a href="#" class="search"><i class="fa fa-search" aria-hidden="true"></i></a> 

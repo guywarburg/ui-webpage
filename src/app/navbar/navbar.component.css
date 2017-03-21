@@ -61,28 +61,6 @@ nav a:hover {
     color: #5384ff;
 }
 
-/* Search menu */
-.search-label {
-    font-family: FontAwesome;
-    color: #0e1a35;
-    font-size: 1em;
-}
-#search {
-    width: 0;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    border: none;
-    margin-top: 10px;
-    padding: 10px;
-    margin-top: -2px;
-    margin-left: 5px;
-}
-
-#search:focus {
-    width: 60%;
-    border-bottom: 1px solid #8492af;
-    border-radius: 5px;
-}
 /*** Right Aligned Menu ***/
 
 /* General */
@@ -94,6 +72,10 @@ nav ul.navbar-right li {
 }
 
 /* Add-Project button */
+nav li.add-project-container {
+    margin-right: 54px;
+}
+
 .add-project {
     background-color: #5384ff;
     border: #5384ff 1px solid;
@@ -104,6 +86,7 @@ nav ul.navbar-right li {
     width: 80px;
     font-size: 12px;
     margin: 0 auto;
+
 }
 
 .add-project:hover {
@@ -169,6 +152,10 @@ nav ul.navbar-right {
         margin: 0;
     }
 
+    nav li {
+        margin-right: 5px;
+    }
+
     nav ul.navbar-right {
         justify-content: center;
     }
@@ -176,4 +163,35 @@ nav ul.navbar-right {
     nav ul.navbar-right li {
         max-width: 70px;        
     }
+
+    nav li.add-project-container {
+    margin-right: 34px;
+}
+}
+
+
+
+/*** search element ***/
+/* TODO - requires fix */
+/* Search menu */
+.search-label {
+    font-family: FontAwesome;
+    color: #0e1a35;
+    font-size: 1em;
+}
+#search {
+    width: 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    margin-top: -2px;
+    margin-left: 5px;
+}
+
+#search:focus {
+    width: 60%;
+    border-bottom: 1px solid #8492af;
+    border-radius: 5px;
 }

@@ -25,7 +25,7 @@ h1 {
     }
 }
 
-/* smartphones */
+/* tablets */
 @media screen and (max-width:768px){
     .in {
         width: 100%;

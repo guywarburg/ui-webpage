@@ -16,8 +16,6 @@ export class MessagesComponent implements OnInit {
   }
 }
 
-
-
 const MESSAGES: Messages[] = [
   { userName: "Nina Jones", messageTime: "5 minutes ago", avatar: "../../assets/images/nina-jones-avatar.png", 
   content: "Hey You! It’s me again :-) I attached new (...)", read: false},

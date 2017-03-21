@@ -11,6 +11,7 @@ export class ActivityTextComponent implements OnInit {
   @Input()
   activity: Activity;
 
+  // convert time to a string for display
   setTime(timePast): string {
     if( timePast === 0) {
       return 'Just now';
@@ -22,6 +23,8 @@ export class ActivityTextComponent implements OnInit {
       return (timePast / 60).toString() + ' hours ago';
     }
   }
+
+  // TODO - slice text if to long
   constructor() { }
 
   ngOnInit() {

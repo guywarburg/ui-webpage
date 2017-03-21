@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css']
 })
+
+// Holds all other components
 export class LayoutComponent implements OnInit {
   // Tasks component variables
   tasksTitle: string = 'Tasks';
@@ -20,6 +22,7 @@ export class LayoutComponent implements OnInit {
   activityTitle: string = 'Activity';
   activityBadge1: number = 10;
   activityBadge2: number = 0;
+  
   constructor() { }
 
   ngOnInit() {
