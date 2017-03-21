@@ -11,7 +11,13 @@
     justify-content: space-between;
     align-items: center;
     min-height: 73px;
+    cursor: pointer;
 }
+
+.task--list-item:hover {
+    background-color: #f4f5f8;
+}
+
 
 .flex {
     display: flex;

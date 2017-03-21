@@ -10,6 +10,11 @@
     display: flex;
     align-items: center;
     min-height: 73px;
+    cursor: pointer;
+}
+
+.message--list-item:hover {
+    background-color: #f4f5f8;
 }
 
 .message--list-avatar {
@@ -18,4 +23,8 @@
 
 .message-read {
     background-color: #f4f5f8;
+}
+
+.message-read:hover {
+    background-color: #e6e8ec;
 }

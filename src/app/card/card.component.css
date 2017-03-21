@@ -42,3 +42,11 @@
 .card--header-badge2 {
     background-color: #f83c7b;
 }
+
+/* tablet */
+@media screen and (max-width: 768px){
+    .card {
+        display: block;
+        margin: 0 auto;
+    }
+}

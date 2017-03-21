@@ -140,7 +140,7 @@ nav ul.navbar-right {
     justify-content: flex-end;
     align-items: center;
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 575px){
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -165,8 +165,8 @@ nav ul.navbar-right {
     }
 
     nav li.add-project-container {
-    margin-right: 34px;
-}
+        margin-right: 34px;
+    }
 }
 
 
