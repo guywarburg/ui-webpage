@@ -45,12 +45,17 @@
 /* laptop */
 @media screen and (max-width: 1000px){
     .component {
+        display: block;
         width: 48%;
         margin-top: 1%;
     }
 
     .component:nth-child(2) {
         margin: 1% 0 0 2%;
+    }
+
+    .component:nth-child(3) {
+        margin-left: 25%;
     }
 }
 
