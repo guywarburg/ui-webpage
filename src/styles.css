@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     background-color: #f6f7fa;
     margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .remove-text {
     text-indent: -10000px;
 }
-
-/************ Import fints here!! ***/

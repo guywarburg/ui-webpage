@@ -1,0 +1,13 @@
+.task--list-name {
+    margin: 0;
+}
+
+.task--list-content {
+    color: #8492af;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.task--list-content.late-delivery {
+    color: #f83c7b;
+}
