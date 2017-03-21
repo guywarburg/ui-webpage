@@ -10,11 +10,22 @@ h1 {
 }
 
 .in {
+    transform: translateX(25%);
     width: 80%;
-    transform: translateX(250px);
+    opacity: 0.6;
     transition: 0.5s linear;
 }
 
+/* laptops */
+@media screen and (max-width:1200px){
+    .in {
+        transform: translateX(44%);
+        width: 69%;
+        transition: 0.5s linear;
+    }
+}
+
+/* smartphones */
 @media screen and (max-width:768px){
     .in {
         width: 100%;
