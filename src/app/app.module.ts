@@ -14,6 +14,8 @@ import { ReportComponent } from './report/report.component';
 import { CardComponent } from './card/card.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskTextComponent } from './task-text/task-text.component';
+import { ActivityComponent } from './activity/activity.component';
+import { ActivityTextComponent } from './activity-text/activity-text.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { TaskTextComponent } from './task-text/task-text.component';
     ReportComponent,
     CardComponent,
     TasksComponent,
-    TaskTextComponent
+    TaskTextComponent,
+    ActivityComponent,
+    ActivityTextComponent
   ],
   imports: [
     BrowserModule,

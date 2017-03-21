@@ -1,0 +1,6 @@
+<ul class="activities--list">
+  <li *ngFor="let activity of activities" class="activity--list-item">
+    <img src="{{ activity.avatar }}" alt="avatar" class="activity--list-avatar">
+    <app-activity-text [activity]="activity"></app-activity-text>
+  </li>
+</ul>
